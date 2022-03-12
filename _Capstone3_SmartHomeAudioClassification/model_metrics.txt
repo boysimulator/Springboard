@@ -1,0 +1,14 @@
+model metrics:
+* predicts 1 of 41 labels for a 16-bit, 44.1 kHz, mono .WAV file
+* predicts labels with 50% accuracy
+* model is a convolutional neural network with
+	- resizing to 50% of original size
+	- 32 filter, kernel size of 3, relu activated convolutional layer
+	- 64 filter, kernel size of 3, relu activated convolutional layer
+	- max pooling layer
+	- 25% dropout layer
+	- flattening layer
+	- 128 unit densely connected layer
+	- 50% dropout layer
+	- final 41 unit densely connected layer
+
